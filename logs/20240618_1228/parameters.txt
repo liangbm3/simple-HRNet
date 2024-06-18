@@ -1,0 +1,26 @@
+self: <training.COCO.COCOTrain object at 0x7f7fe18103a0>
+exp_name: 20240618_1228
+ds_train: <datasets.COCO.COCODataset object at 0x7f801871ba00>
+ds_val: <datasets.COCO.COCODataset object at 0x7f8013b84eb0>
+epochs: 200
+batch_size: 16
+num_workers: 4
+loss: JointsMSELoss
+lr: 0.001
+lr_decay: True
+lr_decay_steps: (170, 200)
+lr_decay_gamma: 0.1
+optimizer: Adam
+weight_decay: 0.0
+momentum: 0.9
+nesterov: False
+pretrained_weight_path: None
+checkpoint_path: None
+log_path: ./logs
+use_tensorboard: True
+model_c: 48
+model_nof_joints: 17
+model_bn_momentum: 0.1
+flip_test_images: True
+device: cuda:0
+__class__: <class 'training.Train.Train'>
