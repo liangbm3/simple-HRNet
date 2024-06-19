@@ -34,11 +34,12 @@ class COCODataset(Dataset):
         Initializes a new COCODataset object.
 
         Image and annotation indexes are loaded and stored in memory.
+        图像和注释索引被加载并存储在内存中。
         Annotations are preprocessed to have a simple list of annotations to iterate over.
-
+        注释经过预处理，得到一个可供迭代的简单注释列表。
         Bounding boxes can be loaded from the ground truth or from a pickle file (in this case, no annotations are
         provided).
-
+        边界框可以从基本事实或 pickle 文件中加载（在这种情况下，不提供注释）。
         Args:
             root_path (str): dataset root path.
                 Default: "./datasets/COCO"
@@ -46,9 +47,9 @@ class COCODataset(Dataset):
                 Default: "train2017"
             is_train (bool): train or eval mode. If true, train mode is used.
                 Default: True
-            use_gt_bboxes (bool): use ground truth bounding boxes. If False, bbox_path is required.
+            use_gt_bboxes (bool): use ground truth bounding boxes. If False, bbox_path is required.使用真值边界框。如果为 False，则需要bbox_path。
                 Default: True
-            bbox_path (str): bounding boxes pickle file path.
+            bbox_path (str): bounding boxes pickle file path.边界框 pickle 文件路径。
                 Default: ""
             image_width (int): image width.
                 Default: 288
